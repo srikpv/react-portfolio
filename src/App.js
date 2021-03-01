@@ -1,6 +1,6 @@
 import {useEffect} from "react";
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, HashRouter } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/pages/Home";
@@ -11,15 +11,13 @@ import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
 import './App.css';
 
-
-
 function App() {
 
   return (
-    <Router>
+    <HashRouter basename='/'>
     <div>
       <Header />
-      <Route exact path="/Home" component={Home} />
+      <Route exact path="/" component={Home} />
       <Route exact path="/Resume" component={Resume} />
       <Route exact path="/Experience" component={Experience} />
       <Route exact path="/Education" component={Education} />
@@ -27,7 +25,7 @@ function App() {
       <Route exact path="/Contact" component={Contact} />
       <Footer />
     </div>
-  </Router>
+  </HashRouter>
     );
 }
 
