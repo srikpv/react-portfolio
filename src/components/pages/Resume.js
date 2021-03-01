@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Resume() {
   return (
     <div>
-      <Link to="../files/Resume_TM.pdf" target="_blank" download><h2>Download</h2></Link>
+      <a href="../react-portfolio/files/Resume_TM.pdf" target="_blank" download><h2>Download</h2></a>
       <p align="center">
     <strong>SRIKANTH PILLARISETTY, PMP</strong>
 </p>
