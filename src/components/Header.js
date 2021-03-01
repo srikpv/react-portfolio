@@ -21,7 +21,7 @@ function Header() {
             <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                <li>
-                  <Link to="/Home">Home</Link>    
+                  <Link to="/">Home</Link>    
                 </li>
                <li>
                   <Link to="/Resume">Resume</Link>
